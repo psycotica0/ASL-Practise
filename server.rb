@@ -17,11 +17,11 @@ def doDisplay
     </title>
     </head>
     <body>
-      <ul>
+      <dl>
         #{items.map do |i|
-          "<li>#{i["description"]}</li>"
+          "<dt>#{i["list_number"]}</dt><dd>#{i["description"]} (pg. #{i["page_number"]})</dd>"
         end.join}
-      </ul>
+      </dl>
       <form method="POST">
         #{items.map do |i|
           "<input type=\"hidden\" name=\"id[]\" value=\"#{i["id"]}\" />"
