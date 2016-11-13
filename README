@@ -1,0 +1,7 @@
+Simple Sinatra App
+
+Currently doesn't do a lot.
+Never will really.
+
+Schema is currently:
+CREATE TABLE vocab (id INTEGER PRIMARY KEY, list_number INTEGER, page_number INTEGER, description TEXT, num_reviews INTEGER);
