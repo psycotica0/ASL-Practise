@@ -8,7 +8,7 @@ $db.results_as_hash = true
 
 def doDisplay
   items = $db.execute "SELECT * FROM vocab ORDER BY num_reviews, RANDOM() LIMIT 6;"
-  <<~HEREDOC
+  <<-HEREDOC
     <!DOCTYPE html>
     <html>
     <head>
